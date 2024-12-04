@@ -1,0 +1,19 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1733327709" />
+    <testcase name="check_full_encryption" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="61" time="0.04442739486694336" sim_time_ns="1017.0" ratio_time="22891.28145023666">
+      <failure message="Test failed with RANDOM_SEED=1733327709" />
+    </testcase>
+    <testcase name="check_subbytes" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="98" time="0.0015761852264404297" sim_time_ns="21.000999999999976" ratio_time="13323.941658448026" />
+    <testcase name="check_shiftrow" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="137" time="0.0006225109100341797" sim_time_ns="4.000999999999976" ratio_time="6427.196592876255" />
+    <testcase name="check_mixcolumns" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="175" time="0.002098560333251953" sim_time_ns="27.000999999999976" ratio_time="12866.43970733923">
+      <failure message="Test failed with RANDOM_SEED=1733327709" />
+    </testcase>
+    <testcase name="check_keysched" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="212" time="0.0006582736968994141" sim_time_ns="3.0009999999999764" ratio_time="4558.893989134335">
+      <failure message="Test failed with RANDOM_SEED=1733327709" />
+    </testcase>
+    <testcase name="check_addkey" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="252" time="0.0009217262268066406" sim_time_ns="5.001000000000204" ratio_time="5425.689162959352">
+      <failure message="Test failed with RANDOM_SEED=1733327709" />
+    </testcase>
+  </testsuite>
+</testsuites>
