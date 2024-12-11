@@ -116,7 +116,7 @@ module aes(clk, rst, din, keyin, dout, done);
 				KEY_ADD: begin
 					// TODO: Add the round key
 					// ???
-					
+					aes_state <= aes_state ^ key;
 									
 					// we are at the last round, go to DONE to signal completion, otherwise increment the round and go to subbytes again
 					if (round == 4'd10) begin

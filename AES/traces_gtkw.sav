@@ -1,9 +1,45 @@
-[timestart] 0
-[pos] 277 183
-*-14 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Fri Dec  6 14:14:46 2024
+[*]
+[dumpfile] "/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/traces.fst"
+[dumpfile_mtime] "Fri Dec  6 14:11:54 2024"
+[dumpfile_size] 11267
+[savefile] "/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/traces_gtkw.sav"
+[timestart] 41420
+[size] 1854 1001
+[pos] 66 32
+*-12.000000 53000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top_level.
-[signals_width] 50
+[treeopen] top_level.aes_module_inst.
+[treeopen] top_level.aes_module_inst.aes_inst.
+[treeopen] top_level.aes_module_inst.aes_inst.keysched_inst.
+[sst_width] 297
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 298
 @28
 top_level.CLK
+@22
+top_level.aes_module_inst.aes_inst.keysched_inst.next_key_out[127:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.prev_key_in[127:0]
+@28
+top_level.aes_module_inst.aes_inst.keysched_inst.done
+top_level.aes_module_inst.aes_inst.keysched_inst.ena
+top_level.aes_module_inst.aes_inst.keysched_inst.state[2:0]
+@22
+top_level.aes_module_inst.aes_inst.keysched_inst.next_column0[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.next_column1[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.next_column2[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.next_column3[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.column0[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.column1[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.column2[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.column3[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.sub_word[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.xor_word[31:0]
+top_level.aes_module_inst.aes_inst.keysched_inst.rcon_inst.round_in[3:0]
+@23
+top_level.aes_module_inst.aes_inst.keysched_inst.rcon_inst.rcon_out[31:0]
 [pattern_trace] 1
 [pattern_trace] 0

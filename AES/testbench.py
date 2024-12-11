@@ -233,7 +233,6 @@ async def check_keysched(dut):
     for _ in range(2):
         await RisingEdge(dut_keysched.clk)
     dut_keysched.rst.value = 0
-
     # check all round keys
     for i in range(1,11):
         # set input 
@@ -243,11 +242,23 @@ async def check_keysched(dut):
 
         # start operation
         dut_keysched.ena.value = 1
-        
-        key_out = convert_num_to_hex_str(dut_keysched.next_key_out.value, reverse=True)
-        key_in = dut_keysched.next_key_out.value
+        #key_out = convert_num_to_hex_str(dut_keysched.next_key_out.value, reverse=True)
+        #key_in = dut_keysched.next_key_out.value
+        try:
+            await with_timeout(
+                RisingEdge(dut_keysched.clk), timeout_time=100, timeout_unit="ns"
+            )
+            key_out = convert_num_to_hex_str(dut_keysched.next_key_out.value, reverse=True)
+            assert key_out == round_keys[i], f"Round {i}: expected {round_keys[i]}, got {key_out}"
+        except Exception as e:
+            assert False, f"Test failed for round {i} with error: {str(e)}"
 
-        assert key_out == round_keys[i]
+        # Update key_in for next round
+        key_in = dut_keysched.next_key_out.value
+        print(key_out)
+        print(i)
+      
+       # assert key_out == round_keys[i]
     
 @cocotb.test()
 async def check_addkey(dut):

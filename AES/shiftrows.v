@@ -24,7 +24,7 @@ module shiftrows(clk, rst, ena, state_in, state_out, done);
 	        temp_state= 128'b0;
 
 			done = 1'b0;
-		end else if (ena) begin
+		end else  begin
 			// Perform the ShiftRows operation
 			// State matrix is treated as 4x4 bytes (16 bytes in total)
 			// state_in = {s0,0, s1,0, s2,0, s3,0, s0,1, s1,1, s2,1, s3,1, s0,2, s1,2, s2,2, s3,2, s0,3, s1,3, s2,3, s3,3}
@@ -81,14 +81,15 @@ module shiftrows(clk, rst, ena, state_in, state_out, done);
 			temp_state[95:88]   = state_in[63:56];    // s3,2 
 			temp_state[127:120] = state_in[95:88];    // s3,3 
 
-
+			if (ena) begin
 			// Assign the shifted state to the output
-			state_out = temp_state;
-			done = 1'b1;
-		end else begin
-			done = 1'b0;
-		end
+				state_out <= temp_state;
+				done <= 1'b1;
+			end else begin
+				done <= 1'b0;
+			end
 	end
+end
 endmodule
 
 
