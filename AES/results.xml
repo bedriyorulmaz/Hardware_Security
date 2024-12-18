@@ -1,11 +1,11 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1733924664" />
-    <testcase name="check_full_encryption" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="61" time="0.01566314697265625" sim_time_ns="138.0" ratio_time="8810.490014612762" />
-    <testcase name="check_subbytes" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="98" time="0.0012214183807373047" sim_time_ns="4.001000000000005" ratio_time="3275.6998446222956" />
-    <testcase name="check_shiftrow" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="137" time="0.0009639263153076172" sim_time_ns="4.001000000000005" ratio_time="4150.732204798422" />
-    <testcase name="check_mixcolumns" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="175" time="0.0013227462768554688" sim_time_ns="9.000999999999976" ratio_time="6804.781958183111" />
-    <testcase name="check_keysched" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="212" time="0.004604816436767578" sim_time_ns="22.001000000000005" ratio_time="4777.823459873668" />
-    <testcase name="check_addkey" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="263" time="0.0012240409851074219" sim_time_ns="5.001000000000005" ratio_time="4085.64750759642" />
+    <property name="random_seed" value="1734521498" />
+    <testcase name="check_full_encryption" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="61" time="0.01591801643371582" sim_time_ns="138.0" ratio_time="8669.421882722983" />
+    <testcase name="check_subbytes" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="98" time="0.0011529922485351562" sim_time_ns="4.001000000000005" ratio_time="3470.1013862696486" />
+    <testcase name="check_shiftrow" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="137" time="0.0009272098541259766" sim_time_ns="4.001000000000005" ratio_time="4315.0965039856055" />
+    <testcase name="check_mixcolumns" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="175" time="0.0013544559478759766" sim_time_ns="9.000999999999976" ratio_time="6645.472681570129" />
+    <testcase name="check_keysched" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="212" time="0.004320383071899414" sim_time_ns="22.001000000000005" ratio_time="5092.372512775234" />
+    <testcase name="check_addkey" classname="testbench" file="/home/ahmet-bedri/Desktop/2024-2025ws/Hardware_Security/AES/testbench.py" lineno="263" time="0.0009808540344238281" sim_time_ns="5.001000000000005" ratio_time="5098.617964025284" />
   </testsuite>
 </testsuites>

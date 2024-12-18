@@ -16,6 +16,17 @@ module top_level (
 	reg err;
    
 	reg [22:0] counter = 0;
+/*
+	// PLL signals
+	wire pll_clk_out;  // 48 MHz output clock
+	wire pll_locked;   // PLL lock signal
+
+	// PLL Instantiation
+	clkgen48 pll_inst (
+		.clock_in (CLK),         // 12 MHz input
+		.clock_out (pll_clk_out), // 48 MHz output
+		.locked (pll_locked)      // Lock status
+	);*/
 
 	uart uart_inst (
 			.clk ( CLK ),
@@ -29,7 +40,7 @@ module top_level (
 			.txpin ( uart_tx_s ),
 			.errout ( err )
 		);
-	defparam uart_inst.CLKS_PER_BIT = 104;
+	defparam uart_inst.CLKS_PER_BIT = 990;//104,416,833-96,937-108,977-112.5,990-114,1003-115.500--------IN CORRECT 1016-117,1042-120,1172-135.1562-180,1771-204
   
 	// AES module instantiation
 	aes_module aes_module_inst (
@@ -46,9 +57,10 @@ module top_level (
 
 	assign UART_TX = uart_tx_s;
 	assign uart_rx_s = UART_RX;
-	assign LED = led_state;
+	//assign LED = led_state;
+	
 
-	always @(posedge CLK, posedge RST) begin
+	/*always @(posedge pll_clk_out, posedge RST) begin
 		if (RST) begin
 			begin
 				counter <= 0;
@@ -62,7 +74,7 @@ module top_level (
 				counter <= 0;
 			end
 		end
-	end
+	end*/
 	// dump waves for simulation
         initial begin
                 $dumpfile("traces.fst");

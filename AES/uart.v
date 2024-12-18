@@ -1,7 +1,11 @@
 module uart ( clk, rst, txdatain, txrdyin, rxpin, rxdataout, rxrdyout, txrdyout, txpin, errout );
 
 //parameter CLKS_PER_BIT = 2500; // 2500=38400 @ 96MHz
-parameter CLKS_PER_BIT = 104;
+parameter CLKS_PER_BIT = 104;//12Mhz
+//parameter CLKS_PER_BIT = 139;//16Mhz
+//parameter CLKS_PER_BIT = 208;//24Mhz
+//parameter CLKS_PER_BIT = 416;//48Mhz
+
 
 input clk;
 input rst;

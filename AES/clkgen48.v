@@ -17,10 +17,15 @@ module clkgen48(
 	);
 
 SB_PLL40_CORE #(
-		.FEEDBACK_PATH("SIMPLE"),
+		/*.FEEDBACK_PATH("SIMPLE"),
 		.DIVR(4'b0000),		// DIVR =  0
 		.DIVF(7'b0111111),	// DIVF = 63
 		.DIVQ(3'b100),		// DIVQ =  4
+		.FILTER_RANGE(3'b001)	// FILTER_RANGE = 1*/
+		.FEEDBACK_PATH("SIMPLE"),
+		.DIVR(4'b0000),		// DIVR =  0
+		.DIVF(7'b1001011),	// DIVF = 63
+		.DIVQ(3'b011),		// DIVQ =  3
 		.FILTER_RANGE(3'b001)	// FILTER_RANGE = 1
 	) uut (
 		.LOCK(locked),
@@ -29,5 +34,6 @@ SB_PLL40_CORE #(
 		.REFERENCECLK(clock_in),
 		.PLLOUTCORE(clock_out)
 		);
-
 endmodule
+
+

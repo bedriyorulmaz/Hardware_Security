@@ -7,61 +7,44 @@ Info: max_span_hack is enabled: estimate is conservative.
 Report for critical path:
 -------------------------
 
-        lc40_14_20_6 (LogicCell40) [clk] -> lcout: 0.640 ns
-     0.640 ns net_54779 (aes_module_inst.aes_din_SB_DFFE_Q_87_D_SB_LUT4_O_I3_SB_LUT4_O_I3[0])
-        t6560 (LocalMux) I -> O: 0.330 ns
-        inmux_14_19_58774_58813 (InMux) I -> O: 0.260 ns
-        lc40_14_19_2 (LogicCell40) in0 -> lcout: 0.449 ns
-     1.678 ns net_54652 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I2[3])
-        t6490 (LocalMux) I -> O: 0.330 ns
-        inmux_13_19_54709_54726 (InMux) I -> O: 0.260 ns
-        t1007 (CascadeMux) I -> O: 0.000 ns
-        lc40_13_19_0 (LogicCell40) in2 -> carryout: 0.231 ns
-     2.499 ns t913
-        lc40_13_19_1 (LogicCell40) carryin -> carryout: 0.126 ns
-     2.625 ns net_54729 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO)
-        lc40_13_19_2 (LogicCell40) carryin -> carryout: 0.126 ns
-     2.751 ns net_54735 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO)
-        lc40_13_19_3 (LogicCell40) carryin -> carryout: 0.126 ns
-     2.877 ns net_54741 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO)
-        inmux_13_19_54741_54751 (InMux) I -> O: 0.260 ns
-        lc40_13_19_4 (LogicCell40) in3 -> lcout: 0.316 ns
-     3.452 ns net_50577 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O[1])
-        t6086 (LocalMux) I -> O: 0.330 ns
-        inmux_13_18_54572_54608 (InMux) I -> O: 0.260 ns
-        lc40_13_18_1 (LogicCell40) in1 -> lcout: 0.400 ns
-     4.441 ns net_50451 (aes_module_inst.aes_din_SB_DFFE_Q_40_D_SB_LUT4_O_I3[2])
-        odrv_13_18_50451_53307 (Odrv12) I -> O: 0.540 ns
-        t6014 (Sp12to4) I -> O: 0.449 ns
-        t6013 (LocalMux) I -> O: 0.330 ns
-        inmux_12_12_49770_49828 (InMux) I -> O: 0.260 ns
-        lc40_12_12_7 (LogicCell40) in0 -> lcout: 0.449 ns
-     6.468 ns net_45642 (aes_module_inst.aes_din_SB_DFFE_Q_87_D_SB_LUT4_O_I3_SB_LUT4_O_I3[3])
-        odrv_12_12_45642_49616 (Odrv4) I -> O: 0.372 ns
-        t5495 (Span4Mux_h4) I -> O: 0.316 ns
-        t5494 (Span4Mux_v4) I -> O: 0.372 ns
-        t5493 (LocalMux) I -> O: 0.330 ns
-        inmux_16_8_65591_65640 (InMux) I -> O: 0.260 ns
-        lc40_16_8_6 (LogicCell40) in3 -> lcout: 0.316 ns
-     8.432 ns net_61457 (aes_module_inst.aes_din_SB_DFFE_Q_87_D_SB_LUT4_O_I3[2])
-        t7011 (LocalMux) I -> O: 0.330 ns
-        inmux_16_8_65598_65602 (InMux) I -> O: 0.260 ns
-     9.021 ns net_65602 (aes_module_inst.aes_din_SB_DFFE_Q_87_D_SB_LUT4_O_I3[2])
-        lc40_16_8_0 (LogicCell40) in1 [setup]: 0.379 ns
-     9.400 ns net_61451 (aes_module_inst.aes_din[42])
+        lc40_17_9_2 (LogicCell40) [clk] -> lcout: 0.640 ns
+     0.640 ns net_65652 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I0_O_SB_LUT4_I3_O_SB_DFFR_D_Q[2])
+        odrv_17_9_65652_69868 (Odrv4) I -> O: 0.372 ns
+        t6932 (Span4Mux_v4) I -> O: 0.372 ns
+        t6931 (LocalMux) I -> O: 0.330 ns
+        inmux_17_13_70272_70296 (InMux) I -> O: 0.260 ns
+        lc40_17_13_0 (LogicCell40) in3 -> lcout: 0.316 ns
+     2.288 ns net_66142 (aes_module_inst.aes_inst.mixcolumns_ena_SB_DFFER_Q_E_SB_LUT4_O_I2[3])
+        odrv_17_13_66142_69997 (Odrv4) I -> O: 0.372 ns
+        t7336 (LocalMux) I -> O: 0.330 ns
+        inmux_17_10_69911_69967 (InMux) I -> O: 0.260 ns
+        lc40_17_10_7 (LogicCell40) in1 -> lcout: 0.400 ns
+     3.649 ns net_65780 (aes_module_inst.aes_inst.keysched_inst.done_SB_LUT4_I1_O[3])
+        odrv_17_10_65780_57758 (Odrv4) I -> O: 0.372 ns
+        t7188 (Span4Mux_v4) I -> O: 0.372 ns
+        t7187 (Span4Mux_v4) I -> O: 0.372 ns
+        t7186 (LocalMux) I -> O: 0.330 ns
+        inmux_14_17_58534_58587 (InMux) I -> O: 0.260 ns
+        t746 (CascadeMux) I -> O: 0.000 ns
+        lc40_14_17_5 (LogicCell40) in2 -> lcout: 0.379 ns
+     5.732 ns net_54409 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_DFFSR_Q_D_SB_DFFER_Q_D_SB_LUT4_I2_O)
+        odrv_14_17_54409_58618 (Odrv4) I -> O: 0.372 ns
+        t4675 (Span4Mux_v4) I -> O: 0.372 ns
+        t4674 (Span4Mux_v4) I -> O: 0.372 ns
+        t4673 (Span4Mux_v4) I -> O: 0.372 ns
+        t4672 (LocalMux) I -> O: 0.330 ns
+        inmux_17_8_69672_69724 (CEMux) I -> O: 0.603 ns
+     8.151 ns net_69724 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_DFFSR_Q_D_SB_DFFER_Q_D_SB_LUT4_I2_O)
+        lc40_17_8_5 (LogicCell40) ce [setup]: 0.000 ns
+     8.151 ns net_65532 (aes_module_inst.aes_inst.shiftrows_inst.state_out_SB_DFFESR_Q_24_D[2])
 
 Resolvable net names on path:
-     0.640 ns ..  1.229 ns aes_module_inst.aes_din_SB_DFFE_Q_87_D_SB_LUT4_O_I3_SB_LUT4_O_I3[0]
-     1.678 ns ..  2.267 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I2[3]
-     2.625 ns ..  2.625 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO
-     2.751 ns ..  2.751 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO
-     2.877 ns ..  3.137 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO
-     3.452 ns ..  4.042 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I2_O_SB_LUT4_I0_I1_SB_DFFER_D_Q_SB_LUT4_I2_O_SB_DFFR_D_1_Q_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O[1]
-     4.441 ns ..  6.019 ns aes_module_inst.aes_din_SB_DFFE_Q_40_D_SB_LUT4_O_I3[2]
-     6.468 ns ..  8.116 ns aes_module_inst.aes_din_SB_DFFE_Q_87_D_SB_LUT4_O_I3_SB_LUT4_O_I3[3]
-     8.432 ns ..  9.021 ns aes_module_inst.aes_din_SB_DFFE_Q_87_D_SB_LUT4_O_I3[2]
-                  lcout -> aes_module_inst.aes_din[42]
+     0.640 ns ..  1.973 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I0_O_SB_LUT4_I3_O_SB_DFFR_D_Q[2]
+     2.288 ns ..  3.249 ns aes_module_inst.aes_inst.mixcolumns_ena_SB_DFFER_Q_E_SB_LUT4_O_I2[3]
+     3.649 ns ..  5.353 ns aes_module_inst.aes_inst.keysched_inst.done_SB_LUT4_I1_O[3]
+     5.732 ns ..  8.151 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_DFFSR_Q_D_SB_DFFER_Q_D_SB_LUT4_I2_O
+                  lcout -> aes_module_inst.aes_inst.shiftrows_inst.state_out_SB_DFFESR_Q_24_D[2]
 
-Total number of logic levels: 10
-Total path delay: 9.40 ns (106.38 MHz)
+Total number of logic levels: 4
+Total path delay: 8.15 ns (122.68 MHz)
 
