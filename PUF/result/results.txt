@@ -1,9 +1,9 @@
-Bit-Aliasing: 48.24%
-Average Reliability: 95.937147%
+Uniqueness: 49.84%
+Uniformity: 49.66%
+Bit-Aliasing: 49.66%
+Average Reliability: 95.94%
 Maximum Reliability: Chip 178 with 98.25%
 Minimum Reliability: Chip 40 with 93.46%
-
-Reliability of each PUF instance:
 Chip 1: 96.22%
 Chip 2: 96.44%
 Chip 3: 96.63%
