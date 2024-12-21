@@ -4,8 +4,8 @@ This project is a Verilog-based hardware implementation of the **AES (Advanced E
 
 ![SubBytes](images/subbytes.png)
 ![ShiftRows](images/shiftrows.png)
-![MixColumns](images/mixcolumns.png)
-![Key Expansion](images/key_expansion.png)
+![MixColumns](images/MixColumns.png)
+![Key Expansion](images/Key_Expansion.png)
 
 ---
 
