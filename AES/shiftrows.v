@@ -26,7 +26,6 @@ module shiftrows(clk, rst, ena, state_in, state_out, done);
 			done = 1'b0;
 		end else  begin
 			// Perform the ShiftRows operation
-			// State matrix is treated as 4x4 bytes (16 bytes in total)
 			// state_in = {s0,0, s1,0, s2,0, s3,0, s0,1, s1,1, s2,1, s3,1, s0,2, s1,2, s2,2, s3,2, s0,3, s1,3, s2,3, s3,3}
 			//
 			// Row 0: No shift

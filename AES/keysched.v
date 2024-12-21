@@ -45,7 +45,7 @@ module keysched(clk, rst, ena, round_in, prev_key_in, next_key_out, done);
     assign column3={prev_key_in[103:96] ,prev_key_in[111:104] ,prev_key_in[119:112] ,prev_key_in[127:120]};
 
 
-    // Instantiate the SBOX module
+    // Instantiate the SBOX module-column3 in the sbxo module
     wire [7:0] sbox_out [3:0];
 	sbox sbox_inst0(.byte_in(prev_key_in[127:120]), .byte_out(sbox_out[2]));
     sbox sbox_inst1(.byte_in(prev_key_in[119:112]), .byte_out(sbox_out[1]));

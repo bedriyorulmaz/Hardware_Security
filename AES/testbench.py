@@ -255,8 +255,8 @@ async def check_keysched(dut):
 
         # Update key_in for next round
         key_in = dut_keysched.next_key_out.value
-        print(key_out)
-        print(i)
+        #print(key_out)
+        #print(i)
       
        # assert key_out == round_keys[i]
     

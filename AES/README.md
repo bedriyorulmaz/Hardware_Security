@@ -47,14 +47,50 @@ This guide will walk you through the prerequisites, setup, and operation of the 
 
 The project uses the **SB_PLL40_CORE** module to generate clock frequencies. Follow these steps to test different clock rates:
 
-1. **Edit the Clock PLL Configuration:**
-   Use the `icepll` tool to configure the clock generator:
+1. **Run the `icepll` Tool to Generate Parameters**:
+   Use the following command to generate the parameters for your desired frequency:
    ```bash
-   icepll -i 12 -o <desired_frequency> > clkgen48.v
+   icepll -i 12 -o <desired_frequency>
    ```
    Replace `<desired_frequency>` with the target frequency (e.g., 16, 24, 48 MHz).
 
-2. **Update the UART Configuration:**
+2. **View the Output Parameters**:
+   The `icepll` command will output parameters like `DIVR`, `DIVF`, `DIVQ`, and `FILTER_RANGE`. For example:
+   ```
+   F_PLLIN:    12.000 MHz (given)
+   F_PLLOUT:   48.000 MHz (requested)
+   F_PLLOUT:   48.000 MHz (achieved)
+
+   FEEDBACK: SIMPLE
+   F_PFD:   12.000 MHz
+   F_VCO:  768.000 MHz
+
+   DIVR:  0 (4'b0000)
+   DIVF: 63 (7'b0111111)
+   DIVQ:  4 (3'b100)
+
+   FILTER_RANGE: 1 (3'b001)
+   ```
+
+3. **Update the PLL Configuration in Verilog**:
+   Use these parameters in the `clkgen48.v` file:
+   ```verilog
+   SB_PLL40_CORE #(
+       .FEEDBACK_PATH("SIMPLE"),
+       .DIVR(4'b0000),       // DIVR =  0
+       .DIVF(7'b0111111),    // DIVF = 63
+       .DIVQ(3'b100),        // DIVQ =  4
+       .FILTER_RANGE(3'b001) // FILTER_RANGE = 1
+   ) uut (
+       .LOCK(locked),
+       .RESETB(1'b1),
+       .BYPASS(1'b0),
+       .REFERENCECLK(clock_in),
+       .PLLOUTCORE(clock_out)
+   );
+   ```
+
+4. **Update the UART Configuration:**
    Adjust the `CLKS_PER_BIT` parameter in `top_level.v` based on the new frequency:
    ```verilog
    defparam uart_inst.CLKS_PER_BIT = <calculated_value>;

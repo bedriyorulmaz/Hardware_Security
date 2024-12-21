@@ -7,44 +7,53 @@ Info: max_span_hack is enabled: estimate is conservative.
 Report for critical path:
 -------------------------
 
-        lc40_17_9_2 (LogicCell40) [clk] -> lcout: 0.640 ns
-     0.640 ns net_65652 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I0_O_SB_LUT4_I3_O_SB_DFFR_D_Q[2])
-        odrv_17_9_65652_69868 (Odrv4) I -> O: 0.372 ns
-        t6932 (Span4Mux_v4) I -> O: 0.372 ns
-        t6931 (LocalMux) I -> O: 0.330 ns
-        inmux_17_13_70272_70296 (InMux) I -> O: 0.260 ns
-        lc40_17_13_0 (LogicCell40) in3 -> lcout: 0.316 ns
-     2.288 ns net_66142 (aes_module_inst.aes_inst.mixcolumns_ena_SB_DFFER_Q_E_SB_LUT4_O_I2[3])
-        odrv_17_13_66142_69997 (Odrv4) I -> O: 0.372 ns
-        t7336 (LocalMux) I -> O: 0.330 ns
-        inmux_17_10_69911_69967 (InMux) I -> O: 0.260 ns
-        lc40_17_10_7 (LogicCell40) in1 -> lcout: 0.400 ns
-     3.649 ns net_65780 (aes_module_inst.aes_inst.keysched_inst.done_SB_LUT4_I1_O[3])
-        odrv_17_10_65780_57758 (Odrv4) I -> O: 0.372 ns
-        t7188 (Span4Mux_v4) I -> O: 0.372 ns
-        t7187 (Span4Mux_v4) I -> O: 0.372 ns
-        t7186 (LocalMux) I -> O: 0.330 ns
-        inmux_14_17_58534_58587 (InMux) I -> O: 0.260 ns
-        t746 (CascadeMux) I -> O: 0.000 ns
-        lc40_14_17_5 (LogicCell40) in2 -> lcout: 0.379 ns
-     5.732 ns net_54409 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_DFFSR_Q_D_SB_DFFER_Q_D_SB_LUT4_I2_O)
-        odrv_14_17_54409_58618 (Odrv4) I -> O: 0.372 ns
-        t4675 (Span4Mux_v4) I -> O: 0.372 ns
-        t4674 (Span4Mux_v4) I -> O: 0.372 ns
-        t4673 (Span4Mux_v4) I -> O: 0.372 ns
-        t4672 (LocalMux) I -> O: 0.330 ns
-        inmux_17_8_69672_69724 (CEMux) I -> O: 0.603 ns
-     8.151 ns net_69724 (aes_module_inst.aes_inst.shiftrows_inst.done_SB_DFFSR_Q_D_SB_DFFER_Q_D_SB_LUT4_I2_O)
-        lc40_17_8_5 (LogicCell40) ce [setup]: 0.000 ns
-     8.151 ns net_65532 (aes_module_inst.aes_inst.shiftrows_inst.state_out_SB_DFFESR_Q_24_D[2])
+        lc40_18_16_4 (LogicCell40) [clk] -> lcout: 0.640 ns
+     0.640 ns net_70592 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_4_Q[1])
+        t6858 (LocalMux) I -> O: 0.330 ns
+        inmux_17_17_70756_70830 (InMux) I -> O: 0.260 ns
+        lc40_17_17_7 (LogicCell40) in3 -> lcout: 0.316 ns
+     1.545 ns net_66641 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI)
+        t6411 (LocalMux) I -> O: 0.330 ns
+        inmux_16_18_66805_66832 (InMux) I -> O: 0.260 ns
+        lc40_16_18_0 (LogicCell40) in1 -> carryout: 0.260 ns
+     2.393 ns t984
+        lc40_16_18_1 (LogicCell40) carryin -> carryout: 0.126 ns
+     2.520 ns net_66836 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I2[3])
+        lc40_16_18_2 (LogicCell40) carryin -> carryout: 0.126 ns
+     2.646 ns net_66842 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_1_I2[3])
+        lc40_16_18_3 (LogicCell40) carryin -> carryout: 0.126 ns
+     2.772 ns net_66848 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O[3])
+        inmux_16_18_66848_66858 (InMux) I -> O: 0.260 ns
+        lc40_16_18_4 (LogicCell40) in3 -> lcout: 0.316 ns
+     3.347 ns net_62685 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O[2])
+        odrv_16_18_62685_62832 (Odrv4) I -> O: 0.372 ns
+        t6020 (Span4Mux_h4) I -> O: 0.316 ns
+        t6019 (Span4Mux_v4) I -> O: 0.372 ns
+        t6018 (LocalMux) I -> O: 0.330 ns
+        inmux_11_16_46192_46228 (InMux) I -> O: 0.260 ns
+        lc40_11_16_4 (LogicCell40) in3 -> lcout: 0.316 ns
+     5.311 ns net_42054 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_I2_O[2])
+        odrv_11_16_42054_38108 (Odrv4) I -> O: 0.372 ns
+        t3748 (Span4Mux_v4) I -> O: 0.372 ns
+        t3752 (Span4Mux_h4) I -> O: 0.316 ns
+        t3751 (Span4Mux_h4) I -> O: 0.316 ns
+        t3750 (Span4Mux_v4) I -> O: 0.372 ns
+        t3749 (LocalMux) I -> O: 0.330 ns
+        inmux_21_11_86326_86372 (InMux) I -> O: 0.260 ns
+     7.646 ns net_86372 (UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_I2_O[2])
+        lc40_21_11_3 (LogicCell40) in0 [setup]: 0.400 ns
+     8.046 ns net_82206 (aes_module_inst.aes_din[98])
 
 Resolvable net names on path:
-     0.640 ns ..  1.973 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_LUT4_I0_O_SB_LUT4_I3_O_SB_DFFR_D_Q[2]
-     2.288 ns ..  3.249 ns aes_module_inst.aes_inst.mixcolumns_ena_SB_DFFER_Q_E_SB_LUT4_O_I2[3]
-     3.649 ns ..  5.353 ns aes_module_inst.aes_inst.keysched_inst.done_SB_LUT4_I1_O[3]
-     5.732 ns ..  8.151 ns aes_module_inst.aes_inst.shiftrows_inst.done_SB_DFFSR_Q_D_SB_DFFER_Q_D_SB_LUT4_I2_O
-                  lcout -> aes_module_inst.aes_inst.shiftrows_inst.state_out_SB_DFFESR_Q_24_D[2]
+     0.640 ns ..  1.229 ns UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_4_Q[1]
+     1.545 ns ..  2.134 ns UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI
+     2.520 ns ..  2.520 ns UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_I2[3]
+     2.646 ns ..  2.646 ns UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_O_1_I2[3]
+     2.772 ns ..  3.032 ns UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O[3]
+     3.347 ns ..  4.995 ns UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O[2]
+     5.311 ns ..  7.646 ns UART_TX_SB_DFFES_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFES_E_Q_SB_LUT4_I0_1_O_SB_LUT4_I2_O_SB_DFFER_E_Q_SB_LUT4_I3_1_O_SB_LUT4_I2_O_SB_LUT4_I2_O[2]
+                  lcout -> aes_module_inst.aes_din[98]
 
-Total number of logic levels: 4
-Total path delay: 8.15 ns (122.68 MHz)
+Total number of logic levels: 8
+Total path delay: 8.05 ns (124.28 MHz)
 
