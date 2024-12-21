@@ -2,6 +2,11 @@
 
 This project is a Verilog-based hardware implementation of the **AES (Advanced Encryption Standard)** algorithm. It includes the core AES functionalities like `SubBytes`, `ShiftRows`, `MixColumns`, and `Key Expansion`, which are implemented as individual modules and integrated into a complete AES system.
 
+![SubBytes](images/subbytes.png)
+![ShiftRows](images/shiftrows.png)
+![MixColumns](images/mixcolumns.png)
+![Key Expansion](images/key_expansion.png)
+
 ---
 
 ## Getting Started
