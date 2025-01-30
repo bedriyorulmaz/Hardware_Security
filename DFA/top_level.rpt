@@ -1,0 +1,25 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        loop-start at net_100073
+        lc40_24_23_2 (LogicCell40) in0 -> lcout: 0.449 ns
+1000000.449 ns net_95912 (ro_grid[3614].ro.A)
+        t16997 (LocalMux) I -> O: 0.330 ns
+        inmux_24_23_100046_100073 (InMux) I -> O: 0.260 ns
+1000001.038 ns net_100073 (ro_grid[3614].ro.A)
+        lc40_24_23_2 (LogicCell40) in0 [setup]: 0.400 ns
+1000001.438 ns net_95912 (ro_grid[3614].ro.A)
+
+Resolvable net names on path:
+1000001.038 ns ..1000001.038 ns ro_grid[3614].ro.A
+                  lcout -> ro_grid[3614].ro.A
+
+Total number of logic levels: 2
+Total path delay: 1000001.44 ns (0.00 MHz)
+

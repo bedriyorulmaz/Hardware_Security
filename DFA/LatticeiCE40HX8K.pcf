@@ -1,0 +1,12 @@
+set_io clkin J3
+set_io rstin B13
+set_io ledout[0] B5
+set_io ledout[1] B4
+set_io ledout[2] A2
+set_io ledout[3] A1
+set_io ledout[4] C5
+set_io ledout[5] C4
+set_io ledout[6] B3
+set_io ledout[7] C3
+set_io uart_rxin B10
+set_io uart_txout B12

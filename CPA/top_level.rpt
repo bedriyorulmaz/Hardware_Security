@@ -1,0 +1,136 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        lc40_6_22_1 (LogicCell40) [clk] -> lcout: 0.640 ns
+     0.640 ns net_23077 (sense_module_inst.aes_inst.subword_sel)
+        odrv_6_22_23077_27292 (Odrv4) I -> O: 0.372 ns
+        t6041 (Span4Mux_h4) I -> O: 0.316 ns
+        t6043 (Span4Mux_v4) I -> O: 0.372 ns
+        t6042 (LocalMux) I -> O: 0.330 ns
+        inmux_13_25_55451_55486 (InMux) I -> O: 0.260 ns
+        lc40_13_25_4 (LogicCell40) in0 -> lcout: 0.449 ns
+     2.737 ns net_51315 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I2_O[3])
+        odrv_13_25_51315_51462 (Odrv4) I -> O: 0.372 ns
+        t9753 (LocalMux) I -> O: 0.330 ns
+        inmux_13_28_55811_55843 (InMux) I -> O: 0.260 ns
+        lc40_13_28_2 (LogicCell40) in0 -> lcout: 0.449 ns
+     4.147 ns net_51682 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3[1])
+        t9864 (LocalMux) I -> O: 0.330 ns
+        inmux_13_27_55685_55735 (InMux) I -> O: 0.260 ns
+        lc40_13_27_4 (LogicCell40) in3 -> lcout: 0.316 ns
+     5.051 ns net_51561 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0[1])
+        odrv_13_27_51561_51344 (Odrv4) I -> O: 0.372 ns
+        t9859 (LocalMux) I -> O: 0.330 ns
+        inmux_13_26_55565_55585 (InMux) I -> O: 0.260 ns
+        lc40_13_26_0 (LogicCell40) in0 -> lcout: 0.449 ns
+     6.461 ns net_51434 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I2_O[1])
+        t9754 (LocalMux) I -> O: 0.330 ns
+        inmux_13_26_55560_55598 (InMux) I -> O: 0.260 ns
+        lc40_13_26_2 (LogicCell40) in1 -> lcout: 0.400 ns
+     7.450 ns net_51436 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_O_I0[0])
+        t9759 (LocalMux) I -> O: 0.330 ns
+        inmux_13_25_55431_55505 (InMux) I -> O: 0.260 ns
+        lc40_13_25_7 (LogicCell40) in1 -> lcout: 0.400 ns
+     8.439 ns net_51318 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0[0])
+        t9741 (LocalMux) I -> O: 0.330 ns
+        inmux_13_26_55567_55606 (InMux) I -> O: 0.260 ns
+        lc40_13_26_3 (LogicCell40) in3 -> lcout: 0.316 ns
+     9.344 ns net_51437 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O[0])
+        t9766 (LocalMux) I -> O: 0.330 ns
+        inmux_14_25_59533_59546 (InMux) I -> O: 0.260 ns
+        lc40_14_25_1 (LogicCell40) in1 -> lcout: 0.400 ns
+    10.333 ns net_55389 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I0_1_O[0])
+        t10112 (LocalMux) I -> O: 0.330 ns
+        inmux_14_26_59638_59674 (InMux) I -> O: 0.260 ns
+        lc40_14_26_2 (LogicCell40) in0 -> lcout: 0.449 ns
+    11.371 ns net_55513 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I0_O_SB_LUT4_I3_O[2])
+        t10132 (LocalMux) I -> O: 0.330 ns
+        inmux_13_27_55677_55708 (InMux) I -> O: 0.260 ns
+        lc40_13_27_0 (LogicCell40) in0 -> lcout: 0.449 ns
+    12.409 ns net_51557 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_22_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[1])
+        t9782 (LocalMux) I -> O: 0.330 ns
+        inmux_13_26_55552_55609 (InMux) I -> O: 0.260 ns
+        lc40_13_26_4 (LogicCell40) in0 -> lcout: 0.449 ns
+    13.447 ns net_51438 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_23_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I0[1])
+        t9769 (LocalMux) I -> O: 0.330 ns
+        inmux_12_26_51495_51534 (InMux) I -> O: 0.260 ns
+        t1443 (CascadeMux) I -> O: 0.000 ns
+        lc40_12_26_4 (LogicCell40) in2 -> lcout: 0.379 ns
+    14.414 ns net_47361 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_22_I2_SB_LUT4_O_I2_SB_LUT4_O_I3[2])
+        t9477 (LocalMux) I -> O: 0.330 ns
+        inmux_12_26_51487_51547 (InMux) I -> O: 0.260 ns
+        lc40_12_26_6 (LogicCell40) in3 -> lcout: 0.316 ns
+    15.319 ns net_47363 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3[1])
+        t9480 (LocalMux) I -> O: 0.330 ns
+        inmux_11_27_47535_47596 (InMux) I -> O: 0.260 ns
+        lc40_11_27_7 (LogicCell40) in0 -> lcout: 0.449 ns
+    16.357 ns net_43410 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2[0])
+        t8776 (LocalMux) I -> O: 0.330 ns
+        inmux_11_26_47405_47473 (InMux) I -> O: 0.260 ns
+        lc40_11_26_7 (LogicCell40) in0 -> lcout: 0.449 ns
+    17.395 ns net_43287 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_19_I2[0])
+        t8751 (LocalMux) I -> O: 0.330 ns
+        inmux_11_25_47290_47332 (InMux) I -> O: 0.260 ns
+        lc40_11_25_4 (LogicCell40) in0 -> lcout: 0.449 ns
+    18.433 ns net_43161 (sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_20_I2[0])
+        odrv_11_25_43161_39215 (Odrv4) I -> O: 0.372 ns
+        t8737 (Span4Mux_v4) I -> O: 0.372 ns
+        t8736 (Span4Mux_v4) I -> O: 0.372 ns
+        t8735 (Span4Mux_h4) I -> O: 0.316 ns
+        t8734 (LocalMux) I -> O: 0.330 ns
+        inmux_11_17_46316_46367 (InMux) I -> O: 0.260 ns
+        lc40_11_17_7 (LogicCell40) in1 -> lcout: 0.400 ns
+    20.853 ns net_42180 (sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_115_I0[2])
+        t8483 (LocalMux) I -> O: 0.330 ns
+        inmux_11_17_46298_46344 (InMux) I -> O: 0.260 ns
+        t1251 (CascadeMux) I -> O: 0.000 ns
+        lc40_11_17_3 (LogicCell40) in2 -> lcout: 0.379 ns
+    21.821 ns net_42176 (sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_84_I0[2])
+        t8477 (LocalMux) I -> O: 0.330 ns
+        inmux_10_17_42233_42274 (InMux) I -> O: 0.260 ns
+        lc40_10_17_4 (LogicCell40) in3 -> lcout: 0.316 ns
+    22.725 ns net_38100 (sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_52_I0[2])
+        t7884 (LocalMux) I -> O: 0.330 ns
+        inmux_10_18_42341_42406 (InMux) I -> O: 0.260 ns
+        lc40_10_18_6 (LogicCell40) in0 -> lcout: 0.449 ns
+    23.763 ns net_38225 (sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_20_I0[2])
+        t7898 (LocalMux) I -> O: 0.330 ns
+        inmux_10_18_42359_42396 (InMux) I -> O: 0.260 ns
+        t1128 (CascadeMux) I -> O: 0.000 ns
+    24.353 ns net_42396_cascademuxed
+        lc40_10_18_4 (LogicCell40) in2 [setup]: 0.323 ns
+    24.675 ns net_38223 (sense_module_inst.aes_inst.key[107])
+
+Resolvable net names on path:
+     0.640 ns ..  2.288 ns sense_module_inst.aes_inst.subword_sel
+     2.737 ns ..  3.698 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I2_O[3]
+     4.147 ns ..  4.736 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_O_I3[1]
+     5.051 ns ..  6.012 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0[1]
+     6.461 ns ..  7.050 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O_SB_LUT4_O_1_I2_SB_LUT4_I2_O[1]
+     7.450 ns ..  8.039 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_O_I0[0]
+     8.439 ns ..  9.028 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0[0]
+     9.344 ns ..  9.933 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I2_O[0]
+    10.333 ns .. 10.922 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I0_1_O[0]
+    11.371 ns .. 11.960 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_I0_O_SB_LUT4_I3_O[2]
+    12.409 ns .. 12.998 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_22_I2_SB_LUT4_O_I2_SB_LUT4_O_I1[1]
+    13.447 ns .. 14.036 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_23_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I0[1]
+    14.414 ns .. 15.004 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_22_I2_SB_LUT4_O_I2_SB_LUT4_O_I3[2]
+    15.319 ns .. 15.908 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2_SB_LUT4_O_I3[1]
+    16.357 ns .. 16.946 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_17_I2[0]
+    17.395 ns .. 17.984 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_19_I2[0]
+    18.433 ns .. 20.453 ns sense_module_inst.aes_inst.keysched_inst.next_key_tmp[0]_SB_LUT4_O_20_I2[0]
+    20.853 ns .. 21.442 ns sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_115_I0[2]
+    21.821 ns .. 22.410 ns sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_84_I0[2]
+    22.725 ns .. 23.315 ns sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_52_I0[2]
+    23.763 ns .. 24.353 ns sense_module_inst.aes_inst.fsm_state_SB_LUT4_I1_1_O_SB_LUT4_O_1_I1_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_20_I0[2]
+                  lcout -> sense_module_inst.aes_inst.key[107]
+
+Total number of logic levels: 21
+Total path delay: 24.68 ns (40.53 MHz)
+

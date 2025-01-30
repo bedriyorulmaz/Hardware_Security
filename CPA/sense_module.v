@@ -26,7 +26,7 @@ module sense_module(clk, rst, uart_rx_ready, uart_data_from_rx, uart_tx_ready, u
 	parameter WAIT_FOR_PLAIN=3'b000, ENCRYPT=3'b001, SEND_CIPHER=3'b010, SEND_SENSE=3'b011;
 	reg [2:0] state;
 	
-	reg aes_rst; // Signal to reset the AES instance
+	reg aes_rst; // Signal to reset the AES instancesensor_dec
 	wire aes_done; // Signal is high when the encryption is completed
 	reg [127:0] aes_din; // AES input data block
 	wire [127:0] aes_dout; // AES ciphertext output
@@ -43,7 +43,7 @@ module sense_module(clk, rst, uart_rx_ready, uart_data_from_rx, uart_tx_ready, u
 	reg [8:0] waddr; // BRAM write address
 	
 	wire [7:0] data_from_bram; // Byte read data from BRAM
-	wire [7:0] data_to_bram; // Byte write data to BRAM
+	reg [7:0] data_to_bram; // Byte write data to BRAM
 	
 	
 	wire [15:0] data_to_bram_ext; // Extended BRAM data signal
@@ -53,7 +53,7 @@ module sense_module(clk, rst, uart_rx_ready, uart_data_from_rx, uart_tx_ready, u
 	assign data_to_bram_ext = {1'b0, data_to_bram[7], 1'b0, data_to_bram[6], 1'b0, data_to_bram[5], 1'b0, data_to_bram[4], 
 							1'b0, data_to_bram[3], 1'b0, data_to_bram[2], 1'b0, data_to_bram[1], 1'b0, data_to_bram[0]};
 	
-	wire we; // Write enable signal to trigger writing of sensor values into the BRAM
+	reg we; // Write enable signal to trigger writing of sensor values into the BRAM
 	
 	
 	// BRAM instance in 512x8 mode (512x one byte)
@@ -90,12 +90,26 @@ module sense_module(clk, rst, uart_rx_ready, uart_data_from_rx, uart_tx_ready, u
      * Optional output to LEDs 7:1 for debugging: sensor_dec
      */
      
-    ???
+	 assign sensor_dec = senseval[6:0]; // Output top 7 bits of val_coded to LEDs
+
 	
 	// Suggested process in which the sensor values are recorded with 48 MHz:
 	always @(posedge clk48m, posedge rst) begin
 		// TODO
-		???
+		if (rst) begin
+			waddr <= 9'b0;           // Reset write address
+			we <= 1'b0;              // Disable writing
+		end else if (aes_lastround) begin
+			// Enable writing during the last AES round
+			we <= 1'b1;                 // Activate write enable
+			data_to_bram <= val_coded;  // Assign sensor value to data_to_bram (8-bit)
+			waddr <= waddr + 1'b1;      // Increment the write address --it shoul be 0
+		end else begin
+			// Default: Disable writing
+			we <= 1'b0;
+			waddr <= 9'b0;           // Reset write address
+
+		end
 	end
 	
 	/* TODO ends here

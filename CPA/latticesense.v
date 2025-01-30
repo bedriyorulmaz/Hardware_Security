@@ -2,7 +2,7 @@ module latticesense ( clkin, enain, valout );
 	// TODO: Change this parameter according to your needs to calibrate the sensor. A sensor value of 0 means you should decrease initlen, while
 	// a sensor value of 63 means you have to increase initlen.
 	// the initial value might be sufficient, or might not be - it depends on your specific FPGA's manufacturing process variation, such that we can not even provide the right value for everyone
-	parameter initlen = 9; 
+	parameter initlen = 9; //9
 	parameter linelen = 64;
 	
 	input clkin;
